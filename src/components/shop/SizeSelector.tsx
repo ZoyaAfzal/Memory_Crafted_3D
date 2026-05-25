@@ -46,7 +46,7 @@ export function SizeSelector({ sizes, selectedSizeId, onSizeChange }: SizeSelect
           </div>
 
           <div className="mt-6 flex items-end justify-between">
-            <div className="font-display text-2xl text-gold font-bold">$0.00</div>
+            <div className="font-display text-2xl text-gold font-bold">${size.price}</div>
             {selectedSizeId === size.id && <CheckCircle className="w-5 h-5 text-gold" />}
           </div>
         </motion.button>

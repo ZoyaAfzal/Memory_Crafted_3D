@@ -75,7 +75,7 @@ function ShopPage() {
       shapeLabel: selectedShape.label,
       sizeId: selectedSize.id,
       sizeLabel: selectedSize.label,
-      price: 0, // Keeping at 0 as requested for display
+      price: totals.total,
       photo: uploadedPhoto ? URL.createObjectURL(uploadedPhoto) : "",
       addons: addons
         .filter((a) => selectedAddons[a.id]?.checked)
@@ -199,7 +199,7 @@ function ShopPage() {
         <TotalBar
           subtotal={totals.subtotal}
           shippingPrice={totals.shipping}
-          total={0} // Hardcoded to 0.00 as requested
+          total={totals.total}
           isReady={isReady}
           missingFields={missingFields}
           onAddToCart={handleAddToCart}

@@ -37,7 +37,7 @@ export function TotalBar({
             Total Price
           </span>
           <span className="font-display text-4xl md:text-5xl text-gold font-bold">
-            $ 0.00
+            $ {total.toFixed(2)}
           </span>
         </div>
       </div>

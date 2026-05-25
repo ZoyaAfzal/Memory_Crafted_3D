@@ -86,7 +86,7 @@ function CartPage() {
                         </div>
                       )}
 
-                      <div className="font-display text-2xl text-gold font-bold">$0.00</div>
+                      <div className="font-display text-2xl text-gold font-bold">${item.price.toFixed(2)}</div>
                     </div>
                   </div>
                 </Reveal>
@@ -105,7 +105,7 @@ function CartPage() {
                       <span className="text-muted-foreground uppercase tracking-widest text-[10px]">
                         Subtotal
                       </span>
-                      <span className="text-foreground font-bold">$0.00</span>
+                      <span className="text-foreground font-bold">${totalPrice.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between text-sm">
                       <span className="text-muted-foreground uppercase tracking-widest text-[10px]">
@@ -117,7 +117,7 @@ function CartPage() {
                     <div className="flex justify-between items-end">
                       <span className="font-display text-lg uppercase tracking-widest">Total</span>
                       <span className="font-display text-3xl text-gold font-bold">
-                        $0.00
+                        ${totalPrice.toFixed(2)}
                       </span>
                     </div>
                   </div>
